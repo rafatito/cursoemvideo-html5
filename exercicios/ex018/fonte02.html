@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face { /* para arquivos de fontes variáveis eu tenho 2 declarações (navegador pode aceitar só a antiga) e tenho que adicionar o font-weight e font-stretch para preferência */
+	        font-family: 'Roboto Flex';
+	        src: url('RobotoFlex-VF.woff2') format('woff2 supports variations'),
+                url('RobotoFlex-VF.woff2') format('woff2-variations');
+	        font-weight: 100 1000;
+	        font-stretch: 25% 151%;
+        }
+
+        @font-face { /* crio um font-family */
+            font-family: 'Caroline';
+            src: url('./fontes/Caroline.otf') format('opentype'); 
+            /*
+            , url() format('truetype'); caso eu tenha um outro com formato ttf por exemplo, ordem de preferência do navegador
+            */  
+            
+            /* formats: alguns não são assim (pesquisar ou testar)
+            -opentype (otf) *
+            -truetype (ttf) *
+            -embedded-opentype
+            -truetype-aat (Apple Advanced Typography)
+            -svg
+            */
+            font-weight: normal; /* digo que fonte funciona melhor no normal */
+            font-style: normal;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
+        }
+
+        h1{
+            font-family: 'Caroline', Times, serif;
+            font-size: 4em;
+            text-align: center;
+            font-weight: normal;
+            /* caso eu não queira negrito */
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut reiciendis nemo libero aliquam eaque consequuntur facere reprehenderit dolorem at eius, aspernatur architecto eos nostrum praesentium nobis suscipit cupiditate! Eius, expedita. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus provident, maxime odio alias ad aut minima? Sint nisi ducimus reprehenderit, sit, atque eveniet obcaecati, consequuntur facilis aspernatur accusantium exercitationem eaque.</p>  
+</body>
+</html>

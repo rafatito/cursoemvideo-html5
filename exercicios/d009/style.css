@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(37, 37, 37);
+}
+h1 {
+    color: lavender;
+    text-align: center;
+}
+p {
+    color:lavender;
+    text-align: center;
+}
+a:link, a:visited {
+    text-decoration: none;
+    color: lavender;
+	}
+a:hover {
+	text-decoration: underline; 
+	color: lavender;
+    font-size: 120%;
+	}
+a:active {
+	text-decoration: none
+	}

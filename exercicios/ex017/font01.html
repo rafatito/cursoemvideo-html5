@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url();
+        body {
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+            /* Não posso usar fonte simples!
+            Medidas Absolutas
+            cm, mm, in, px, pt, pc
+
+            Medidas Relativas
+            em, ex, rem, vw, vh, % 
+            16px geralmente = 1em
+            */
+            text-align: justify;
+            font-size: 1em;
+            font-weight: bolder;
+            /*
+            Pesos Liteirais
+            lighter, normal (padrão), bold, bolder
+            Numérica
+            100, 200... - 900
+            */
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        h1 {
+            /*
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            faço basante, consigo condensar
+            shorthand font
+            ordem:
+            font-style, font-weight, font-size, font-family
+            */
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+
+        h2 {
+            font: bold 2em 'Work Sans', sans-serif; 
+            /* posso omitir, não mudar a ordem */
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est aut sapiente quibusdam, aperiam ducimus iure blanditiis, consequatur debitis eum aspernatur consectetur! Dolor, tenetur commodi. Quam asperiores a nemo cum eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos reiciendis aut eius laudantium aliquid libero quam consequuntur debitis earum corporis. Nihil magni, perspiciatis quas nemo ullam aliquid sed dignissimos blanditiis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur in totam, laborum eaque amet laudantium esse quasi rem, dolorum non minima corrupti eum? Reprehenderit exercitationem similique illum eius alias natus?
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, eum. Praesentium tempore soluta totam odio fugit possimus. Inventore perferendis qui enim, exercitationem aliquid obcaecati praesentium, odio maxime eos veniam aut?</p>
+    <h2>Subtítulo</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus non laboriosam quibusdam voluptatem eius molestias aspernatur id iusto exercitationem, corrupti laborum. Neque aliquam, aperiam pariatur ipsum natus perferendis laboriosam labore? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ex culpa blanditiis veritatis, possimus rerum odio explicabo eius asperiores minus tempora eveniet libero repellendus quam placeat dignissimos tenetur deserunt sint!</p> 
+</body>
+</html>
