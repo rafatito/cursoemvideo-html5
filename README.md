@@ -1,2 +1,2 @@
 # cursoemvideo-html5
- Material do curso de HTML5 e CSS3 do Curso em Video
+ Material de estudo e exercícios do curso de HTML5/CSS3 do Curso em Video
